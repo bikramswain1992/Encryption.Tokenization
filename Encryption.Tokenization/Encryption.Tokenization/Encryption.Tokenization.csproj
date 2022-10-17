@@ -3,7 +3,6 @@
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
     <PackageId>Encryption.Tokenization</PackageId>
     <Authors>Bikram Swain</Authors>
     <Company>Bikram Swain</Company>
@@ -12,11 +11,14 @@
 1. Produces password hash using BCrypt
 2. Produces JWT token</Description>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <Version>1.2.0</Version>
+    <RepositoryUrl>https://github.com/bikramswain1992/Encryption.Tokenization</RepositoryUrl>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="BCrypt.Net-Next" Version="4.0.3" />
     <PackageReference Include="Microsoft.IdentityModel.JsonWebTokens" Version="6.17.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
   </ItemGroup>
 
 </Project>

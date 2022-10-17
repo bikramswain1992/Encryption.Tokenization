@@ -2,7 +2,7 @@
 using Encryption.Tokenization.Response;
 
 namespace Encryption.Tokenization;
-public class EncoderDecoder : IEncoderDecoder
+public sealed class EncoderDecoder : IEncoderDecoder
 {
     public PasswordHash HashPassword(string password)
     {

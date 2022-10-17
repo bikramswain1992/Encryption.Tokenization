@@ -6,7 +6,7 @@ using Microsoft.IdentityModel.Tokens;
 using System.Security.Cryptography;
 
 namespace Encryption.Tokenization;
-public class JWTTokenizer : IJWTTokenizer
+public sealed class JWTTokenizer : IJWTTokenizer
 {
     private readonly string _secret;
     private readonly RsaSecurityKey _key;
