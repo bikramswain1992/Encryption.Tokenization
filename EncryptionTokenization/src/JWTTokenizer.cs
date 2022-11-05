@@ -6,11 +6,17 @@ using Microsoft.IdentityModel.Tokens;
 using System.Security.Cryptography;
 
 namespace Encryption.Tokenization;
+
 public sealed class JWTTokenizer : IJWTTokenizer
 {
     private readonly string _secret;
     private readonly RsaSecurityKey _key;
     private readonly JsonWebTokenHandler _handler;
+
+    public JWTTokenizer() : this(null)
+    {
+
+    }
 
     public JWTTokenizer(string secret)
     {
@@ -49,6 +55,11 @@ public sealed class JWTTokenizer : IJWTTokenizer
         _handler = new JsonWebTokenHandler();
     }
 
+    /// <summary>
+    /// Generates JWT token
+    /// </summary>
+    /// <param name="identityInfo">Identity parameters to be part of tokenization</param>
+    /// <returns></returns>
     public string GenerateToken(GenerateTokenRequest identityInfo)
     {
         var now = DateTime.UtcNow;
@@ -69,6 +80,11 @@ public sealed class JWTTokenizer : IJWTTokenizer
         return jwt;
     }
 
+    /// <summary>
+    /// Validates JWT
+    /// </summary>
+    /// <param name="jwtInfo">Identity information to be validated</param>
+    /// <returns></returns>
     public TokenValidationResponse ValidateToken(ValidateTokenRequest jwtInfo)
     {
         TokenValidationResult result = _handler.ValidateToken(jwtInfo.JWT,

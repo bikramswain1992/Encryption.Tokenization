@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Encryption.Tokenization.Response;
-public class PasswordHash
+public class HashedData
 {
     public string Salt { get; set; }
     public string Hash { get; set; }

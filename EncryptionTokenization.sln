@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32328.378
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EncryptionTokenization", "EncryptionTokenization\src\EncryptionTokenization.csproj", "{144E977B-4B63-42A8-BBA1-8F1F6E81C20D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{FC6C2220-58C1-4421-AA23-A0FE4BFB4F92}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{B51DE726-522D-4B6F-890E-8FACD88BB590}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EncodersDecoders.Tests", "EncryptionTokenization\test\EncoderDecoder.Tests\EncodersDecoders.Tests.csproj", "{3E6A430B-544C-41ED-B2B6-405DF54F2A45}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JWTTokenizers.Tests", "EncryptionTokenization\test\JWTTokenizers.Tests\JWTTokenizers.Tests.csproj", "{093FBA9C-5934-41B2-B57B-6AB8038EE5D4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{144E977B-4B63-42A8-BBA1-8F1F6E81C20D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{144E977B-4B63-42A8-BBA1-8F1F6E81C20D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{144E977B-4B63-42A8-BBA1-8F1F6E81C20D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{144E977B-4B63-42A8-BBA1-8F1F6E81C20D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E6A430B-544C-41ED-B2B6-405DF54F2A45}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E6A430B-544C-41ED-B2B6-405DF54F2A45}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E6A430B-544C-41ED-B2B6-405DF54F2A45}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E6A430B-544C-41ED-B2B6-405DF54F2A45}.Release|Any CPU.Build.0 = Release|Any CPU
+		{093FBA9C-5934-41B2-B57B-6AB8038EE5D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{093FBA9C-5934-41B2-B57B-6AB8038EE5D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{093FBA9C-5934-41B2-B57B-6AB8038EE5D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{093FBA9C-5934-41B2-B57B-6AB8038EE5D4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{144E977B-4B63-42A8-BBA1-8F1F6E81C20D} = {FC6C2220-58C1-4421-AA23-A0FE4BFB4F92}
+		{3E6A430B-544C-41ED-B2B6-405DF54F2A45} = {B51DE726-522D-4B6F-890E-8FACD88BB590}
+		{093FBA9C-5934-41B2-B57B-6AB8038EE5D4} = {B51DE726-522D-4B6F-890E-8FACD88BB590}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {570807AD-F5AC-40A5-94D8-EC60DD0C07F9}
+	EndGlobalSection
+EndGlobal
