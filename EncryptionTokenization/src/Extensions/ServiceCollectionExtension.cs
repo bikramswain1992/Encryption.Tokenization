@@ -1,5 +1,6 @@
 ﻿using Encryption.Tokenization;
 using Encryption.Tokenization.Contract;
+using EncryptionTokenization.Contract;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace EncryptionTokenization.Extensions;
@@ -10,6 +11,7 @@ public static class ServiceCollectionExtension
     {
         services.AddSingleton<IEncoderDecoder, EncoderDecoder>();
         services.AddSingleton<IAsymmetricKeyEncoderDecoder, AsymmetricKeyEncoderDecoder>();
+        services.AddSingleton<ISymmetricKeyEncoderDecoder, SymmetricKeyEncoderDecoder>();
         services.AddSingleton<IJWTTokenizer, JWTTokenizer>();
 
         return services;
@@ -19,6 +21,7 @@ public static class ServiceCollectionExtension
     {
         services.AddScoped<IEncoderDecoder, EncoderDecoder>();
         services.AddScoped<IAsymmetricKeyEncoderDecoder, AsymmetricKeyEncoderDecoder>();
+        services.AddScoped<ISymmetricKeyEncoderDecoder, SymmetricKeyEncoderDecoder>();
         services.AddScoped<IJWTTokenizer, JWTTokenizer>();
 
         return services;
@@ -28,6 +31,7 @@ public static class ServiceCollectionExtension
     {
         services.AddTransient<IEncoderDecoder, EncoderDecoder>();
         services.AddTransient<IAsymmetricKeyEncoderDecoder, AsymmetricKeyEncoderDecoder>();
+        services.AddTransient<ISymmetricKeyEncoderDecoder, SymmetricKeyEncoderDecoder>();
         services.AddTransient<IJWTTokenizer, JWTTokenizer>();
 
         return services;
