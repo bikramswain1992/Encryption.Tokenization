@@ -10,9 +10,10 @@
     <Description>Package provides three functionalities
 1. Hashing using BCrypt
 2. Asymmetric Key Encryption and Decryption using RSA.
-2. Produces JWT token</Description>
+3. Symmetric Key Encryption and Decryption usig Aes.
+4. Produces JWT token</Description>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <Version>2.0.2</Version>
+    <Version>2.0.5</Version>
     <RepositoryUrl>https://github.com/bikramswain1992/Encryption.Tokenization</RepositoryUrl>
     <PackageProjectUrl>https://github.com/bikramswain1992/Encryption.Tokenization</PackageProjectUrl>
   </PropertyGroup>
